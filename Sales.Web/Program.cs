@@ -1,3 +1,4 @@
+using CurrieTechnologies.Razor.SweetAlert2;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Sales.Web;
@@ -15,5 +16,7 @@ builder.Services.AddHttpClient<IRepository, Repository>(client =>
 {
     client.BaseAddress = new Uri("https://localhost:7011/");
 });
+
+builder.Services.AddSweetAlert2();
 
 await builder.Build().RunAsync();

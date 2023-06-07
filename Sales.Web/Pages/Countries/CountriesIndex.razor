@@ -3,7 +3,7 @@
 
 @inject IRepository repository
 <h3>Paises</h3>
-
+<a class="btn btn-sm btn-primary float-end" href="/countries/create"><i class="oi oi-plus"></i> Adicionar País</a>
 
     <GenericList MyList="Countries">
         <Loading>
@@ -22,7 +22,7 @@
                     {
                         <tr>
                             <td>
-                                <a class="btn btn-warning">Editar</a>
+                                <a class="btn btn-warning" href="/countries/edit/@country.Id">Editar</a>
                                 <button class="btn btn-danger">Borrar</button>
                             </td>
                             <td>
